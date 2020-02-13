@@ -1,0 +1,17 @@
+*{
+	margin:		0px;
+	padding:	0px;
+	outline:	solid 1px black;
+}
+#sprites {
+	display:	inline-block;
+	width:		65%;
+}
+#info {
+	position:	absolute;
+	display:	inline-block;
+	vertical-align:	top;
+	height:		85%;
+	width:		30%;
+	text-align:	center;
+}
