@@ -13,5 +13,14 @@
 	vertical-align:	top;
 	height:		85%;
 	width:		30%;
+}
+#name {
 	text-align:	center;
+	text-transform:	capitalize;
+}
+#info img{
+	margin:		0 auto;
+}
+#info b {
+	display:	none;
 }
