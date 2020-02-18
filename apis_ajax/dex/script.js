@@ -61,9 +61,15 @@ function getbg(type){
 }
 $(document).ready(function(){
 	$('img').click(function(){
+		$("img.bg").css("background-color","");
+		$("img.bg").removeClass("bg");
+		t=this;
 		$.getJSON("https://pokeapi.co/api/v2/pokemon/"+$(this).attr("id"),function(data){
+			var color = getbg(data.types[data.types.length-1].type.name);
+			$(t).addClass("bg")
 			$("#welcome").hide();
-			$("#info").css("background-color",getbg(data.types[data.types.length-1].type.name));
+			$("#info").css("background-color",color);
+			$(t).css("background-color",color);
 			$("ul").html("");
 			$("b").css("display","block");
 			$("#name").text(data.name);
