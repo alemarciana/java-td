@@ -31,8 +31,9 @@ a {
 /*	text-transform:	capitalize;*/
 }
 #info img{
-	margin:		0 auto;
-	width:		30%;
+	margin:			0 auto;
+	width:			40%;
+	image-rendering:	pixelated;
 }
 #info b {
 	display:	none;
