@@ -1,26 +1,38 @@
 *{
 	margin:		0px;
 	padding:	0px;
-	outline:	solid 1px black;
+/*	outline:	solid 1px black;*/
 }
 #sprites {
 	display:	inline-block;
 	width:		65%;
 }
+a {
+	text-decoration:	none;
+}
 #info {
-	position:	absolute;
-	display:	inline-block;
-	vertical-align:	top;
-	height:		85%;
-	width:		30%;
+	position:		fixed;
+	right:			1%;
+	top:			1%;
+	vertical-align:		top;
+	height:			85%;
+	width:			30%;
+/*	background-color:	green;*/
+	padding:		10px;
+	border-radius:		20px;
+	text-transform:		capitalize;
 }
 #name {
 	text-align:	center;
-	text-transform:	capitalize;
+/*	text-transform:	capitalize;*/
 }
 #info img{
 	margin:		0 auto;
+	width:		30%;
 }
 #info b {
 	display:	none;
+}
+#info ul li{
+	margin-left:	20px;
 }
