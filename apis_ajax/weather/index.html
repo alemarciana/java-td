@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="../../resources/jquery-3.4.1.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<form id="info">
+			<label for="city">City</label>
+			<input type="text" id="city"/><br/>
+			<label for="dg">Seleccione la unidad de medida</label>
+			<input type="radio" name="dg" class="dg" value="metric">Celsius</input>
+			<input type="radio" name="dg" class="dg" value="imperial">Fahrenheit</input>
+			<input type="radio" name="dg" class="dg" value="default">Kelvin</input>
+			<input type="submit"/>
+		</form>
+		<div id='weather'>
+			<p id="city_name"></p>
+			<p id="current_temp"></p>
+		</div>
+	</body>
+</html>
