@@ -11,6 +11,8 @@
 	</head>
 	<body>
 		<nav class="navbar is-primary">
+			<div class="navbar-start">
+			</div>
 			<div class="navbar-end">
 				<a class="navbar-item" href="https://github.com/angeelgod/java-td" target="_blank">GitHub Repo</a>
 				<a href="https://bulma.io" class="navbar-item" target="_blank">
@@ -19,18 +21,24 @@
 			</div>
 		</nav>
 		<div class="columns">
-			<form class="column" id="info">
-				<label for="city">City</label>
-				<input type="text" id="city"/><br/>
-				<label for="dg">Seleccione la unidad de medida</label>
-				<input type="radio" name="dg" class="dg" value="metric" checked>Celsius</input>
-				<input type="radio" name="dg" class="dg" value="imperial">Fahrenheit</input>
-				<input type="radio" name="dg" class="dg" value="default">Kelvin</input>
-				<input class="button is-primary" type="submit"/>
+			<form class="column tile is-vertical level" id="info">
+				<label class="level-item" for="city">City</label>
+				<input class="level-item input is-primary is-medium" type="text" class="control" id="city" autocomplete="off" placeholder="Enter City Name"/><br>
+				<label class="level-item" for="dg">Seleccione la unidad de medida</label>
+				<div class="level-item">
+					<div class="column"><label for="c">Celsius</label>
+						<input type="radio" name="dg" id="c" class="dg" value="metric" checked/></div>
+					<div class="column"><label for="f">Fahrenheit</label>
+						<input type="radio" name="dg" id="f" class="dg" value="imperial"/></div>
+					<div class="column"><label for="k">Kelvin</label>
+						<input type="radio" name="dg" id="k" class="dg" value="default"/></div>
+				</div>
+				<input class="button is-success is-outlined" type="submit"/>
 			</form>
-			<div class="column" id='weather'>
+			<div class="column" id='weather' style="display:none">
 				<p class="title" id="city_name"></p>
 				<p class="subtitle" id="current_temp"></p>
+				<img src="" id="current_icon"/>
 			</div>
 		</div>
 	</body>
