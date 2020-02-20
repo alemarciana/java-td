@@ -1,9 +1,0 @@
-$(document).ready(function(){
-	$('form#location').submit(function() {
-		var a=$('#city').val()
-		$.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+$('#city').val()+"&appid=4eb0b682bf2c611d898d072534723ea4",function(data){
-			console.log(data.name)
-		});
-		return false;
-	});
-});
