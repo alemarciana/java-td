@@ -5,22 +5,39 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="../../resources/bulma-0.8.0/css/bulma.css"/>
-		<link rel="stylesheet" href="style.css"/>
+		<!--<link rel="stylesheet" href="style.css"/>-->
 		<script src="../../resources/jquery-3.4.1.min.js"></script>
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<nav class="navbar is-primary">
+		<div class="columns is-gapless"><aside class="menu is-outlined column is-2">
+			<p class="menu-label">Projects / Assignments</p>
+			<ul class="menu-list">
+
+				<li>
+					<a>APIs / Ajax</a>
+					<ul>
+						<li><a href="../pokemon/index.html">Pokemon Sprites</a></li>
+						<li><a href="../dex/index.html">PokeDex</a></li>
+						<li><a class="is-active" href="#">Weather Forecast</a><li>
+					</ul>
+				</li>
+				<li><a>MySQL</a></li>
+				<li><a>Java</a></li>
+			</ul>
+		</aside>
+		<div class="column is-10"><nav class="navbar is-primary">
 			<div class="navbar-start">
+				<p class="navbar-item title">Angeelgod's Weather Forecast</p>
 			</div>
 			<div class="navbar-end">
 				<a class="navbar-item" href="https://github.com/angeelgod/java-td" target="_blank">GitHub Repo</a>
 				<a href="https://bulma.io" class="navbar-item" target="_blank">
-<img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24">
-</a>
+					<img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24">
+				</a>
 			</div>
 		</nav>
-		<div class="columns">
+		<div class="columns is-vcentered">
 			<form class="column tile is-vertical level" id="info">
 				<label class="level-item" for="city">City</label>
 				<input class="level-item input is-primary is-medium" type="text" class="control" id="city" autocomplete="off" placeholder="Enter City Name"/><br>
@@ -40,6 +57,6 @@
 				<p class="subtitle" id="current_temp"></p>
 				<img src="" id="current_icon"/>
 			</div>
-		</div>
+		</div></div></div>
 	</body>
 </html>
