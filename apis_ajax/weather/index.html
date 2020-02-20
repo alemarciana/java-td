@@ -3,23 +3,35 @@
 	<head>
 		<title>Weather</title>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../resources/bulma-0.8.0/css/bulma.css"/>
 		<link rel="stylesheet" href="style.css"/>
 		<script src="../../resources/jquery-3.4.1.min.js"></script>
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<form id="info">
-			<label for="city">City</label>
-			<input type="text" id="city"/><br/>
-			<label for="dg">Seleccione la unidad de medida</label>
-			<input type="radio" name="dg" class="dg" value="metric">Celsius</input>
-			<input type="radio" name="dg" class="dg" value="imperial">Fahrenheit</input>
-			<input type="radio" name="dg" class="dg" value="default">Kelvin</input>
-			<input type="submit"/>
-		</form>
-		<div id='weather'>
-			<p id="city_name"></p>
-			<p id="current_temp"></p>
+		<nav class="navbar is-primary">
+			<div class="navbar-end">
+				<a class="navbar-item" href="https://github.com/angeelgod/java-td" target="_blank">GitHub Repo</a>
+				<a href="https://bulma.io" class="navbar-item" target="_blank">
+<img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24">
+</a>
+			</div>
+		</nav>
+		<div class="columns">
+			<form class="column" id="info">
+				<label for="city">City</label>
+				<input type="text" id="city"/><br/>
+				<label for="dg">Seleccione la unidad de medida</label>
+				<input type="radio" name="dg" class="dg" value="metric" checked>Celsius</input>
+				<input type="radio" name="dg" class="dg" value="imperial">Fahrenheit</input>
+				<input type="radio" name="dg" class="dg" value="default">Kelvin</input>
+				<input class="button is-primary" type="submit"/>
+			</form>
+			<div class="column" id='weather'>
+				<p class="title" id="city_name"></p>
+				<p class="subtitle" id="current_temp"></p>
+			</div>
 		</div>
 	</body>
 </html>
