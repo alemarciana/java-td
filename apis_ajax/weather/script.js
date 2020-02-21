@@ -5,7 +5,8 @@ $(document).ready(function(){
 		if (unit==='default'){unit='';u='K'}
 		else if (unit==='imperial'){u='°F'}
 		else {u='°C'}
-		$('#city').removeClass('is-primary').addClass('is-success')
+		$('#city').removeClass('is-primary').addClass('is-success');
+		console.log($('#city').val());
 		$.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+$('#city').val()+"&appid=4eb0b682bf2c611d898d072534723ea4&units="+unit,function(data){
 			$('p#city_name').html(data.name+'<span class="subtitle"> ,'+data.sys.country+'</span>');
 			$('p#current_temp').text(data.main.temp+' '+u);
