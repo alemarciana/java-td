@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Pokedex</title>
+		<title>Game of Thrones</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="../../resources/bulma-0.8.0/css/bulma.css"/>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css"/>
 		<script src="../../resources/jquery-3.4.1.min.js"></script>
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<div id="main_container" class="columns">
-			<aside class="menu column is-2" style="padding:1%!important;">
+		<div id="container" class="columns">
+			<div class="modal">
+			  <div class="modal-background"></div>
+			  <div class="modal-card">
+			    <header class="modal-card-head">
+			      <p class="modal-card-title">House Name</p>
+			      <button class="delete" aria-label="close"></button>
+			    </header>
+			    <section class="modal-card-body">
+			      <!-- Content ... -->
+			    </section>
+			  </div>
+			</div>
+			<aside class="menu column is-2" style="padding:1%!important;position:fixed;">
 				<p class="menu-label">Projects / Assignments</p>
 				<ul class="menu-list">
 					<li>
 						<a>APIs / Ajax</a>
 						<ul>
 							<li><a href="../pokemon/index.html">Pokemon Sprites</a></li>
-							<li><a class="is-active" href="#">PokeDex</a></li>
+							<li><a href="../dex/index.html">PokeDex</a></li>
 							<li><a href="../weather/index.html">Weather Forecast</a></li>
-							<li><a href="../got/index.html">Game of Thrones</a></li>
+							<li><a href="#" class="is-active">Game of Thrones</a></li>
 						</ul>
 					</li>
 					<li><a>MySQL</a></li>
 					<li><a>Java</a></li>
 				</ul>
 			</aside>
-		<div class="is-10 is-offset-2 column has-navbar-fixed-top" style="padding:0!important">
+			<div class="column is-10 is-offset-2 has-navbar-fixed-top" style="padding:0!important">
 				<nav class="navbar is-primary is-fixed-top" role="navigation">
 					<div class="navbar-start">
-						<p class="navbar-item title">Angeelgod's PokéDex</p>
+						<p class="navbar-item title">Game of Thrones Assignment</p>
 					</div>
 					<div class="navbar-end">
 						<a class="navbar-item" href="https://github.com/angeelgod/java-td" target="_blank">GitHub Repo</a>
@@ -39,25 +51,13 @@
 						</a>
 					</div>
 				</nav>
-				<div id="sprites" class="columns is-multiline is-8 column">	
+				<div id="content" class="columns is-multiline">
+					<img src="rs/baratheon.png" class=" column is-half">
+					<img src="rs/lannister.jpg" class=" column is-half">
+					<img src="rs/stark.jpg" class="column is-half">
+					<img src="rs/targaryen.jpg" class="column is-half">
 				</div>
-				<div id="info" class="column card is-3 is-rounded">
-					<div id="welcome" class="card-content">
-						<h1>Welcome to Angeelgod's Pokedex</h1>
-						<h3>This project was made possible thanks to <a target="_blank" href="https://pokeapi.co/">PokeAPI's API</a></h3>
-					</div>
-					<div class="card-content">
-						<h1 id="name" class="title"></h1>
-						<img src="">
-						<b>Types</b>
-						<ul id="types"></ul>
-						<p id="height"></p>
-						<p id="weight"></p>
-					</div>
-				</div>
+			</div>
 		</div>
-		<script>
-			drawPoke();
-		</script>
 	</body>
 </html>
