@@ -83,7 +83,8 @@ $(document).ready(function(){
 			}
 			$("p#height").html("<span style='font-weight:bolder;'>Height: </span>"+data.height);
 			$("p#weight").html("<span style='font-weight:bolder;'>Weight: </span>"+data.weight);
-			Audio('img/'+data.name+'.m4a').play();
+			var audio = new Audio('img/'+data.name+'.m4a');
+			audio.play()
 		});
 	});
 	$("#info img").hover(function(){
