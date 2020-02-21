@@ -3,25 +3,24 @@
 	padding:	0px;
 /*	outline:	solid 1px black;*/
 }
-#sprites {
-	display:	inline-block;
-	width:		65%;
+.menu{ 
+	position:	fixed;	
+}
+div#main_container{
+	margin:		0!important;
+}
+nav {
+	position: sticky!important;
 }
 #sprites img{
 	border-radius:	40px;
 }
-a {
-	text-decoration:	none;
-}
 #info {
 	position:		fixed;
 	right:			1%;
-	top:			1%;
+	top:			70px;
 	vertical-align:		top;
-	height:			85%;
-	width:			30%;
-/*	background-color:	green;*/
-	padding:		10px;
+	height:			60%;
 	border-radius:		20px;
 	border:			5px solid gray;
 	text-transform:		capitalize;
@@ -35,9 +34,5 @@ a {
 	width:			40%;
 	image-rendering:	pixelated;
 }
-#info b {
-	display:	none;
-}
-#info ul li{
-	margin-left:	20px;
-}
+#info b		{display:	none}
+#info ul li	{margin-left:	20px;}

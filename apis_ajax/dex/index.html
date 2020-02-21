@@ -3,24 +3,57 @@
 	<head>
 		<title>Pokedex</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../resources/bulma-0.8.0/css/bulma.css"/>
 		<link rel="stylesheet" href="style.css">
 		<script src="../../resources/jquery-3.4.1.min.js"></script>
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<div id="sprites">	
-		</div>
-		<div id="info">
-			<div id="welcome">
-				<h1>Welcome to Angeelgod's Pokedex</h1>
-				<h3>This project was made possible thanks to <a target="_blank" href="https://pokeapi.co/">PokeAPI's API</a></h3>
-			</div>
-			<h1 id="name"></h1>
-			<img src="">
-			<b>Types</b>
-			<ul id="types"></ul>
-			<p id="height"></p>
-			<p id="weight"></p>
+		<div id="main_container" class="columns">
+			<aside class="menu column is-2" style="padding:1%!important;">
+				<p class="menu-label">Projects / Assignments</p>
+				<ul class="menu-list">
+					<li>
+						<a>APIs / Ajax</a>
+						<ul>
+							<li><a href="../pokemon/index.html">Pokemon Sprites</a></li>
+							<li><a class="is-active" href="#">PokeDex</a></li>
+							<li><a href="../weather/index.html">Weather Forecast</a><li>
+						</ul>
+					</li>
+					<li><a>MySQL</a></li>
+					<li><a>Java</a></li>
+				</ul>
+			</aside>
+		<div class="is-10 is-offset-2 column has-navbar-fixed-top" style="padding:0!important">
+				<nav class="navbar is-primary is-fixed-top" role="navigation">
+					<div class="navbar-start">
+						<p class="navbar-item title">Angeelgod's PokéDex</p>
+					</div>
+					<div class="navbar-end">
+						<a class="navbar-item" href="https://github.com/angeelgod/java-td" target="_blank">GitHub Repo</a>
+						<a href="https://bulma.io" class="navbar-item" target="_blank">
+							<img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24">
+						</a>
+					</div>
+				</nav>
+				<div id="sprites" class="columns is-multiline is-8 column">	
+				</div>
+				<div id="info" class="column card is-3 is-rounded">
+					<div id="welcome" class="card-content">
+						<h1>Welcome to Angeelgod's Pokedex</h1>
+						<h3>This project was made possible thanks to <a target="_blank" href="https://pokeapi.co/">PokeAPI's API</a></h3>
+					</div>
+					<div class="card-content">
+						<h1 id="name" class="title"></h1>
+						<img src="">
+						<b>Types</b>
+						<ul id="types"></ul>
+						<p id="height"></p>
+						<p id="weight"></p>
+					</div>
+				</div>
 		</div>
 		<script>
 			drawPoke();

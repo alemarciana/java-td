@@ -10,7 +10,7 @@
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<div class="columns is-gapless"><aside class="menu is-outlined column is-2">
+		<div class="columns is-gapless"><aside class="menu column is-2" style="padding:1%!important;">
 			<p class="menu-label">Projects / Assignments</p>
 			<ul class="menu-list">
 
@@ -26,7 +26,7 @@
 				<li><a>Java</a></li>
 			</ul>
 		</aside>
-		<div class="column is-10"><nav class="navbar is-primary">
+		<div class="column is-10"><nav class="navbar is-primary is-fixed-top" style="position:sticky!important">
 			<div class="navbar-start">
 				<p class="navbar-item title">Angeelgod's Weather Forecast</p>
 			</div>
@@ -50,7 +50,7 @@
 					<div class="column"><label for="k">Kelvin</label>
 						<input type="radio" name="dg" id="k" class="dg" value="default"/></div>
 				</div>
-				<input class="button is-success is-outlined" type="submit"/>
+				<input class="button is-success is-outlined" value="Search" type="submit"/>
 			</form>
 			<div class="column" id='weather' style="display:none">
 				<p class="title" id="city_name"></p>

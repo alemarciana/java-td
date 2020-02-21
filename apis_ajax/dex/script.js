@@ -5,7 +5,7 @@ $.fn.extend({
 });
 function drawPoke(){
 	for (i=1;i<=151;i++){
-		$('#sprites').append("<img id='"+i+"'src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+i+".png'>");
+		$('#sprites').append("<figure class='column image is-2'><img id='"+i+"' class='is-rounded' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+i+".png'></figure>");
 	}
 }
 function getbg(type){
@@ -60,7 +60,11 @@ function getbg(type){
 	}
 }
 $(document).ready(function(){
-	$('img').click(function(){
+	$('#sprites img').hover(function(){
+		if ($(this).css("background-color")==="rgba(0, 0, 0, 0)"){$(this).css("background-color","#d8d8d8");}
+		},function(){if ($(this).css("background-color")==="rgb(216, 216, 216)"){$(this).css("background-color","")};
+	});
+	$('#sprites img').click(function(){
 		$("img.bg").css("background-color","");
 		$("img.bg").removeClass("bg");
 		t=this;
@@ -70,7 +74,7 @@ $(document).ready(function(){
 			$("#welcome").hide();
 			$("#info").css("background-color",color);
 			$(t).css("background-color",color);
-			$("ul").html("");
+			$("ul#types").html("");
 			$("b").css("display","block");
 			$("#name").text(data.name);
 			$("#info img").attr({"src":data.sprites.front_default,"src-alt":data.sprites.back_default});
