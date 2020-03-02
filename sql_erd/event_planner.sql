@@ -1,9 +1,6 @@
 use event_planner;
 INSERT INTO users(name)
-VALUES ('Angel'),
-('Victoria'),
-('Gustavo'),
-('Maca');
+VALUES ('Angel'),('Victoria'),('Gustavo'),('Maca');
 SELECT * FROM users;
 INSERT INTO addresses(addr,city,user_id)
 VALUES ('Las Quilas 1367','Temuco',1),('San Martin 000','Temuco',1),('Caupolican 666','Temuco',2);
