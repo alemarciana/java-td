@@ -13,3 +13,4 @@ UPDATE saludos SET name='konnichiwa' WHERE id=3;
 SELECT * FROM saludos;
 DELETE FROM saludos WHERE id=3;
 SELECT * FROM saludos;
+DROP DATABASE hola;
