@@ -11,4 +11,10 @@ VALUES ('Suicidaton Bailable','Con 3 ambientes (tech, ska y rock), esta será la
 SELECT * from events;
 INSERT INTO invitations(accepted,user_id,event_id)
 VALUES (1,1,1),(0,2,1),(1,3,1),(1,1,2),(1,2,2),(1,3,2);
+INSERT INTO invitations(accepted,user_id)
+VALUES (0,1);
 SELECT * FROM invitations;
+SELECT * FROM invitations
+JOIN events on events.id = invitations.event_id;
+SELECT * FROM invitations
+LEFT JOIN events on events.id = invitations.event_id

@@ -6,3 +6,7 @@ SELECT * FROM ninjas;
 UPDATE ninjas
 SET ability='SER WETa'
 WHERE id=2;
+INSERT INTO abilities(name,description)
+VALUES ('Escupe Fuego','Puede escupir fuego durante 5 segundos'),
+('Morir','Puede morir a voluntad');
+SELECT * FROM abilities
