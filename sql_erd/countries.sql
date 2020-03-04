@@ -7,7 +7,7 @@ WHERE languages.language='slovene';
 SELECT countries.name as 'Country Name', COUNT(cities.country_id) AS 'Cities' FROM cities 
 JOIN countries ON countries.id = cities.country_id
 GROUP BY countries.name
-order by Cities desc;
+ORDER BY Cities desc;
 -- Tercera Consulta
 SELECT name, population, country_code FROM cities WHERE country_id=136 AND population > 500000;
 -- Cuarta Consulta
@@ -19,10 +19,8 @@ SELECT name, surface_area, population FROM countries WHERE surface_area < 501 AN
 -- Sexta Consulta
 SELECT name, government_form, capital, life_expectancy FROM countries WHERE government_form = 'Constitutional Monarchy' AND capital > 200 AND life_expectancy > 75;
 -- Septima Consulta
-SELECT countries.name, cities.name, cities.district, cities.population FROM cities 
+SELECT countries.name AS Pais, cities.name as Ciudad, cities.district, cities.population AS Poblacion FROM cities 
 JOIN countries ON cities.country_id = countries.id
 WHERE country_id='9' AND cities.population > 500000;
 -- Octava Consulta
-SELECT countries.region AS 'Region', COUNT(countries.name) AS 'Countries' FROM countries
-GROUP BY countries.region
-ORDER BY Countries desc;
+SELECT countries.region AS 'Region', COUNT(countries.name) AS 'Countries' FROM countries GROUP BY countries.region ORDER BY Countries desc;
