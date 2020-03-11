@@ -35,5 +35,8 @@ public class BasicJavaTest {
 		// Eleventh Method / Exercise
 	 	int[] arr10 = {1,5,10,-2};
 		System.out.println(Arrays.toString(basic.minMaxAvg(arr10)));
+		// Twelfth Method / Exercise
+		int[] arr11 = {1,2,4,8,10,12};
+		System.out.println(Arrays.toString(basic.switchPositions(arr11)));
 	}
 }

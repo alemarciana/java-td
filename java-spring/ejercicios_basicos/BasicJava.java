@@ -84,8 +84,16 @@ public class BasicJava {
 			}
 			sum+=i;
 		}
-		double avg = sum / arr.length;
+		double avg = (float)sum / arr.length;
+		System.out.println(avg);
 		Object[] mma = {min,max,avg};
 		return mma;
+	}
+	public int[] switchPositions(int[] arr){
+		for ( int i = 0; i<arr.length-1;i++){
+			arr[i] = arr[i+1];
+		}
+		arr[arr.length-1] = 0;
+		return arr;
 	}
 }
