@@ -44,12 +44,13 @@ public class PuzzleJava {
 			int n = ran.nextInt(101);
 			if ( n >= 55 && n <= 100 ) {
 				list.add(n);
-			}
+				}
 		}
 		return list;
 	}
-	public ArrayList<Integer> randSort() {
+	public void randSort() {
 		ArrayList<Integer> list = new ArrayList<Integer>();
+		ArrayList<Object> list2 = new ArrayList<Object>();
 		while ( list.size() < 10 ) {
 			Random ran = new Random();
 			int n = ran.nextInt(101);
@@ -58,10 +59,40 @@ public class PuzzleJava {
 			}
 		}
 		Collections.sort(list);
-		return list;
+		Integer min = list.get(0);
+		Integer max = list.get(0);
+		for ( int i = 0; i < list.size(); i++ ) {
+			if ( list.get(i) < min ) {
+				min = list.get(i);
+			}
+			if ( list.get(i) > max ) {
+				max = list.get(i);
+			}
+		}
+		System.out.println(list);
+		System.out.println("El valor minimo de la lista es: "+min);
+		System.out.println("El valor maximo de la lista es: "+max);
 	}
-	public void randStr() {
+	public String randStr() {
+		Random rand = new Random();
 		char[] abc = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-		System.out.println(abc.toString());
+		String str1 = "";
+		while ( str1.length() < 5 ) {
+			str1 += abc[rand.nextInt(25)];
+		}
+		return str1;
+	}
+	public ArrayList<String> randList() {
+		Random rand = new Random();
+		char[] abc = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+		ArrayList<String> list = new ArrayList<String>();
+		while ( list.size() < 10 ) {
+			String str = "";
+			while ( str.length() < 5 ) {
+				str += abc[rand.nextInt(25)];
+			}
+			list.add(str);
+		}
+		return list;
 	}
 }

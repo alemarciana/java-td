@@ -15,9 +15,11 @@ public class PuzzleJavaTest {
 		// Fourth Method / Exercise
 		System.out.println("Cuarto Ejercicio:\n"+puzzle.randInt());
 		// Fifth Method / Exercise
-		System.out.println("Quinto Ejercicio:\n"+puzzle.randSort());
+		System.out.println("Quinto Ejercicio:");
+		puzzle.randSort();
 		// Sixth Method / Exercise
-		System.out.println("Sexto Ejercicio:\n");
-		puzzle.randStr();
+		System.out.println("Sexto Ejercicio:\n"+puzzle.randStr());
+		// Seventh Method / Exercise
+		System.out.println("Septimo Ejercicio:\n"+puzzle.randList());
 	}
 }
