@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+BasicJava	ejercicios_basicos/BasicJava.java	/^public class BasicJava {$/;"	c
+BasicJavaTest	ejercicios_basicos/BasicJavaTest.java	/^public class BasicJavaTest {$/;"	c
+ExceptionList	exception_list/ExceptionList.java	/^public class ExceptionList {$/;"	c
+FirstProgram	FirstProgram.java	/^public class FirstProgram {$/;"	c
+FizzBuzz	fizzbuzz/FizzBuzz.java	/^public class FizzBuzz {$/;"	c
+FizzBuzzTest	fizzbuzz/FizzBuzzTest.java	/^public class FizzBuzzTest {$/;"	c
+GreaterThan	ejercicios_basicos/BasicJava.java	/^	public int GreaterThan(int[] arr, int num){$/;"	m	class:BasicJava
+Greeter	Greeter.java	/^public class Greeter {$/;"	c
+GreeterTest	GreeterTest.java	/^public class GreeterTest {$/;"	c
+Hashmatique	hashmatique/Hashmatique.java	/^public class Hashmatique {$/;"	c
+HelloWorld	HelloWorld.java	/^public class HelloWorld {$/;"	c
+OddsToArray	ejercicios_basicos/BasicJava.java	/^	public ArrayList<Integer> OddsToArray(int num){$/;"	m	class:BasicJava
+OddsToNum	ejercicios_basicos/BasicJava.java	/^	public void OddsToNum(int num){$/;"	m	class:BasicJava
+OneToNum	ejercicios_basicos/BasicJava.java	/^	public ArrayList<Integer> OneToNum(int num){$/;"	m	class:BasicJava
+PuzzleJava	rompecabezas/PuzzleJava.java	/^public class PuzzleJava {$/;"	c
+PuzzleJavaTest	rompecabezas/PuzzleJavaTest.java	/^public class PuzzleJavaTest {$/;"	c
+Pythagorean	pitagoras/Pythagorean.java	/^public class Pythagorean {$/;"	c
+PythagoreanTest	pitagoras/PythagoreanTest.java	/^public class PythagoreanTest {$/;"	c
+StringManipulator	manipulacion_de_cadenas/StringManipulator.java	/^public class StringManipulator {$/;"	c
+StringManipulatorTest	manipulacion_de_cadenas/StringManipulatorTest.java	/^public class StringManipulatorTest {$/;"	c
+SumToNum	ejercicios_basicos/BasicJava.java	/^	public void SumToNum(int num){$/;"	m	class:BasicJava
+Test1	Test1.java	/^public class Test1 {$/;"	c
+Vehicle	Vehicle.java	/^class Vehicle {$/;"	c
+VehicleTest	VehicleTest.java	/^public class VehicleTest {$/;"	c
+calculateHypotenuse	pitagoras/Pythagorean.java	/^	public double calculateHypotenuse(int catA, int catB) {$/;"	m	class:Pythagorean
+color	Vehicle.java	/^	private String color;$/;"	f	class:Vehicle	file:
+concatSubstring	manipulacion_de_cadenas/StringManipulator.java	/^	public String concatSubstring(String str1, int iIndex, int fIndex, String str2){$/;"	m	class:StringManipulator
+createGreeting	Greeter.java	/^	private String createGreeting(String toBeGreeted) {$/;"	m	class:Greeter	file:
+getAverage	ejercicios_basicos/BasicJava.java	/^	public double getAverage(int[] arr){$/;"	m	class:BasicJava
+getColor	Vehicle.java	/^	public String getColor() {$/;"	m	class:Vehicle
+getIndexOrNull	manipulacion_de_cadenas/StringManipulator.java	/^	public Integer getIndexOrNull(String str, char ch){$/;"	m	class:StringManipulator
+getIndexOrNull	manipulacion_de_cadenas/StringManipulator.java	/^	public Integer getIndexOrNull(String str1, String str2){$/;"	m	class:StringManipulator
+getName	Vehicle.java	/^	public String getName() {$/;"	m	class:Vehicle
+getNumberOfWheels	Vehicle.java	/^	public int getNumberOfWheels() {$/;"	m	class:Vehicle
+greet	Greeter.java	/^	public String greet() {$/;"	m	class:Greeter
+greet	Greeter.java	/^	public String greet(String firstName, String lastName) {$/;"	m	class:Greeter
+main	FirstProgram.java	/^	public static void main(String[] args) {$/;"	m	class:FirstProgram
+main	GreeterTest.java	/^	public static void main(String[] args) {$/;"	m	class:GreeterTest
+main	HelloWorld.java	/^	public static void main(String[] args) {$/;"	m	class:HelloWorld
+main	Test1.java	/^	public static void main(String[] args){$/;"	m	class:Test1
+main	VehicleTest.java	/^	public static void main(String[] args) {$/;"	m	class:VehicleTest
+main	ejercicios_basicos/BasicJavaTest.java	/^	public static void main(String[] args){$/;"	m	class:BasicJavaTest
+main	exception_list/ExceptionList.java	/^	public static void main(String[] args) {$/;"	m	class:ExceptionList
+main	fizzbuzz/FizzBuzzTest.java	/^	public static void main(String[] args){$/;"	m	class:FizzBuzzTest
+main	hashmatique/Hashmatique.java	/^	public static void main(String[] args) {$/;"	m	class:Hashmatique
+main	manipulacion_de_cadenas/StringManipulatorTest.java	/^	public static void main(String[] args) {$/;"	m	class:StringManipulatorTest
+main	pitagoras/PythagoreanTest.java	/^	public static void main(String[] args) {$/;"	m	class:PythagoreanTest
+main	rompecabezas/PuzzleJavaTest.java	/^	public static void main(String[] args){$/;"	m	class:PuzzleJavaTest
+minMaxAvg	ejercicios_basicos/BasicJava.java	/^	public Object[] minMaxAvg(int[] arr){$/;"	m	class:BasicJava
+name	Vehicle.java	/^	private String name;$/;"	f	class:Vehicle	file:
+numberOfWheels	Vehicle.java	/^	private int numberOfWheels;$/;"	f	class:Vehicle	file:
+printArray	ejercicios_basicos/BasicJava.java	/^	public void printArray(int[] arr){$/;"	m	class:BasicJava
+randInt	rompecabezas/PuzzleJava.java	/^	public ArrayList<Integer> randInt() {$/;"	m	class:PuzzleJava
+randList	rompecabezas/PuzzleJava.java	/^	public ArrayList<String> randList() {$/;"	m	class:PuzzleJava
+randSort	rompecabezas/PuzzleJava.java	/^	public void randSort() {$/;"	m	class:PuzzleJava
+randStr	rompecabezas/PuzzleJava.java	/^	public String randStr() {$/;"	m	class:PuzzleJava
+returnMax	ejercicios_basicos/BasicJava.java	/^	public int returnMax(int[] arr){$/;"	m	class:BasicJava
+rmNegatives	ejercicios_basicos/BasicJava.java	/^	public int[] rmNegatives(int[] arr){$/;"	m	class:BasicJava
+run	fizzbuzz/FizzBuzz.java	/^	public String run(int num){$/;"	m	class:FizzBuzz
+setColor	Vehicle.java	/^	public void setColor(String col) {$/;"	m	class:Vehicle
+setName	Vehicle.java	/^	public void setName(String name) {$/;"	m	class:Vehicle
+setNumberOfWheels	Vehicle.java	/^	public void setNumberOfWheels(int number) {$/;"	m	class:Vehicle
+shuffleAbc	rompecabezas/PuzzleJava.java	/^	public void shuffleAbc() {$/;"	m	class:PuzzleJava
+shuffleAndAdd	rompecabezas/PuzzleJava.java	/^	public ArrayList<String> shuffleAndAdd( String[] arr) {$/;"	m	class:PuzzleJava
+sqrtArr	ejercicios_basicos/BasicJava.java	/^	public int[] sqrtArr(int[] arr){$/;"	m	class:BasicJava
+sumAndPositives	rompecabezas/PuzzleJava.java	/^	public ArrayList<Integer> sumAndPositives( int[] arr) {$/;"	m	class:PuzzleJava
+switchPositions	ejercicios_basicos/BasicJava.java	/^	public int[] switchPositions(int[] arr){$/;"	m	class:BasicJava
+trimAndConcat	manipulacion_de_cadenas/StringManipulator.java	/^	public String trimAndConcat(String strA, String strB){$/;"	m	class:StringManipulator
