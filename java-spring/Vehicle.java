@@ -2,6 +2,13 @@ class Vehicle {
 	private int numberOfWheels;
 	private String color;
 	private String type;
+	public Vehicle() {
+	}
+	public Vehicle(Integer n, String c, String t) {
+		numberOfWheels = n;
+		color = c;
+		type = t;
+	}
 	// getter
 	public int getNumberOfWheels() {
 		return numberOfWheels;

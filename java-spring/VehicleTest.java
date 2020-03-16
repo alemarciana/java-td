@@ -18,10 +18,13 @@ public class VehicleTest {
 		skate.setColor("Green");
 		skate.setNumberOfWheels(4);
 		ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
+		// Create bicycle vehicle
+		Vehicle bicycle = new Vehicle(2,"yellow","Bicycle");
 		// Add vehicles to List
 		vehicles.add(redCar);
 		vehicles.add(whiteBike);
 		vehicles.add(skate);
+		vehicles.add(bicycle);
 		for ( Vehicle i : vehicles ) {
 			System.out.println("Vehicle Type: "+i.getType()+"\nNumber of Wheels: "+i.getNumberOfWheels()+", Color: "+i.getColor()+"\n");
 		}
