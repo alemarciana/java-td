@@ -1,8 +1,9 @@
 public class Project {
-	String nombre;
-	String descripcion;
+	private String nombre;
+	private String descripcion;
+	private double initialCost;
 	public void elevatorPitch() {
-		System.out.println(nombre+": "+descripcion);
+		System.out.println(nombre+"("+initialCost+"): "+descripcion);
 	}
 	public Project() { 
 	}
@@ -19,10 +20,16 @@ public class Project {
 	public void setDescription(String description) {
 		descripcion = description;
 	}
-	public void getName() {
-		System.out.println(name);
+	public void setInitialCost(int cost){
+		initialCost = cost;
 	}
-	public void getDescription() {
-		Systen.out.println(descripcion);
+	public String getName() {
+		return nombre;
+	}
+	public String getDescription() {
+		return descripcion;
+	}
+	public double getInitialCost() {
+		return initialCost;
 	}
 }
