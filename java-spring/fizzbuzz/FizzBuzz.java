@@ -1,3 +1,4 @@
+package fizzbuzz;
 public class FizzBuzz {
 	public String run(int num){
 		if ( num % 3 == 0 && num % 5 == 0 ){
