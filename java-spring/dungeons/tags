@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+Human	dungeons/Human.java	/^	public Human(){$/;"	m	class:Human
+Human	dungeons/Human.java	/^public class Human {$/;"	c
+HumanTest	dungeons/HumanTest.java	/^public class HumanTest {$/;"	c
+attack	dungeons/Human.java	/^	public void attack(Human human){$/;"	m	class:Human
+dungeons	dungeons/Human.java	/^package dungeons;$/;"	p
+dungeons	dungeons/HumanTest.java	/^package dungeons;$/;"	p
+getStats	dungeons/Human.java	/^	public void getStats(){$/;"	m	class:Human
+health	dungeons/Human.java	/^	protected int strength, stealth, intelligence, health;$/;"	f	class:Human
+intelligence	dungeons/Human.java	/^	protected int strength, stealth, intelligence, health;$/;"	f	class:Human
+main	dungeons/HumanTest.java	/^	public static void main(String[] args){$/;"	m	class:HumanTest
+stealth	dungeons/Human.java	/^	protected int strength, stealth, intelligence, health;$/;"	f	class:Human
+strength	dungeons/Human.java	/^	protected int strength, stealth, intelligence, health;$/;"	f	class:Human
