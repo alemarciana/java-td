@@ -1,0 +1,27 @@
+@charset "UTF-8";
+* {
+	margin:		0;
+	padding:	0;
+}
+header {
+	padding:	20px;
+	text-align:	center;
+}
+#board {
+	display:	inline;
+	text-align:	center;
+}
+.row {
+	margin-bottom:	-4px;
+}
+.tile {
+	display:	inline-block;
+	height:		50px;
+	width:		50px;
+}
+.tile1 {
+	background-color:	black;
+}
+.tile2 {
+	background-color:	gray;
+}
