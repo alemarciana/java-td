@@ -9,8 +9,8 @@
 	</head>
 	<body>
 	<%
-	int width = Integer.parseInt(request.getParameter("width"));
-	int height = Integer.parseInt(request.getParameter("height"));
+	int width = Integer.parseInt(((request.getParameter("width") == null) ? "0" : request.getParameter("width")));
+	int height = Integer.parseInt(((request.getParameter("height") == null) ? "0" : request.getParameter("height")));
 	String insert1 = "";
 	for (int h = 0; h<height; h++){
 		insert1 = insert1 + "<div class='row'>";

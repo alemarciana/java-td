@@ -45,5 +45,10 @@
 		</item>    
 	</menu>
 	<menu type="dinner">
+		<item category="hielo">
+			<name>Hielo</name>
+			<description>Hielo</description>
+			<price>$100.00</price>
+		</item>
 	</menu>
 </restaurant>
