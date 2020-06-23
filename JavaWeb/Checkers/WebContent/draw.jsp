@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Checkerboard</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="resources/style.css">
 	</head>
 	<body>
 	<%
