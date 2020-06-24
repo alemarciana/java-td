@@ -8,6 +8,6 @@ public class Cat extends Animal implements Pet {
 		super(name, breed, weight);
 	}
 	public String showAffection() {
-		return "Tu gato " + this.getBreed() + " " + this.getName() + " te observa con cariño (al parecer)";
+		return "Your " + this.getBreed() + " cat, " + this.getName() + " looked at you with some affection, you think";
 	}
 }

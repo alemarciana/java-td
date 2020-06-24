@@ -39,8 +39,18 @@ public class Game extends HttpServlet {
 		}
 		else if (user.getGuess() == null) {}
 		else {
-			if (user.getGuess().equals(user.getNumber())) {
+			if (user.getTries() == 5) {
+				if (user.getGuess().equals(user.getNumber())) {
+					user.setSuccess(0);
+					user.incScore();
+				}
+				else {
+					user.setSuccess(2);
+				}
+			}
+			else if (user.getGuess().equals(user.getNumber())) {
 				user.setSuccess(0);
+				user.incScore();
 			}
 			else if (user.getGuess() < user.getNumber()) {
 				user.setSuccess(-1);

@@ -29,7 +29,15 @@ public class Reset extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		session.removeAttribute("user");
+		User user = (User)session.getAttribute("user");
+		user.setMinNumber(Integer.parseInt((request.getParameter("min") == null ? "1" : (request.getParameter("min") == "" ? "1" : request.getParameter("min")))));
+		user.setMaxNumber(Integer.parseInt((request.getParameter("max") == null ? "100" : ( request.getParameter("max") == "" ? "100" : request.getParameter("max")))));
+		user.generateNumber();
+		user.setSuccess(-2);
+		user.resetTries();
+		user.nullifyGuess();
+		session.setAttribute("user", user);
+		// session.removeAttribute("user");
 		response.sendRedirect("game");
 	}
 

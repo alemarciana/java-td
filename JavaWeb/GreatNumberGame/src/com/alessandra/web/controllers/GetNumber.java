@@ -43,6 +43,7 @@ public class GetNumber extends HttpServlet {
 	HttpSession session = request.getSession();
 	User user = (User)session.getAttribute("user");
 	user.setGuess(guess);
+	user.incTries();
 	// RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 	// view.forward(request, response);
 	response.sendRedirect("game");

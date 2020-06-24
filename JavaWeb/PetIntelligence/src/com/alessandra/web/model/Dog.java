@@ -8,6 +8,6 @@ public class Dog extends Animal implements Pet {
 		super(name, breed, weight);
 	}
 	public String showAffection() {
-		return "Tu perro " + this.getName() + " de raza " + this.getBreed() + ((this.getWeight() >= 30) ? " se acurruca cerca tuyo" : " salta a tu regazo");
+		return "Your " + this.getBreed() + " dog " + this.getName() + ((this.getWeight() >= 30) ? " curls up nexto to you" : " hops into your lap");
 	}
 }

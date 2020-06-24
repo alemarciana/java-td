@@ -5,9 +5,12 @@ public class User {
 	private Integer number, guess;
 	private int minNumber = 1;
 	private int maxNumber = 100;
-	private int success = -2; // 0 if guess is correct, -1 if it's too low, 1 if it's too high
+	private int success = -2; // 0 if guess is correct, -1 if it's too low, 1 if it's too high, 2 if user ran out of tries
+	private int tries;
+	private int score;
 	public User() {
-		number = generateNumber();
+		generateNumber();
+		tries = 0;
 	}
 	public int getMinNumber() {
 		return minNumber;
@@ -33,14 +36,32 @@ public class User {
 	public Integer getNumber() {
 		return this.number;
 	}
-	public int generateNumber() {
+	public void generateNumber() {
 		Random random = new Random(System.currentTimeMillis());
-		return random.nextInt((maxNumber - minNumber) +1) + minNumber;
+		number = random.nextInt((maxNumber - minNumber) +1) + minNumber;
 	}
 	public void setSuccess(int success) {
 		this.success = success;
 	}
 	public int getSuccess() {
 		return success;
+	}
+	public void resetTries() {
+		tries = 0;
+	}
+	public void incTries() {
+		tries++;
+	}
+	public int getTries() {
+		return tries;
+	}
+	public void nullifyGuess() {
+		guess = null;
+	}
+	public void incScore() {
+		score++;
+	}
+	public int getScore() {
+		return score;
 	}
 }
