@@ -28,9 +28,9 @@
 						<a>Java</a>
 						<ul>
 							<li><a href="/PetIntelligence/Home" class="is-active">PetIntelligence</a></li>
-							<li><a href="#">Button Clicker</a></li>
-							<li><a href="#">Random Words</a></li>
-							<li><a href="/GreatNumberGame/game">Great Number Game</a></li>
+							<li><a href="/ButtonClicker/Count">Button Clicker</a></li>
+							<li><a href="/Random/Random">Random Words</a></li>
+							<li><a href="GreatNumberGame/game">Great Number Game</a></li>
 						</ul>
 					</li>
 				</ul>

@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.alessandra.mvc.models.Book;
-import com.alessandra.mvc.repositories.BookRepository;
 import com.alessandra.mvc.services.BookService;
 
 @Controller

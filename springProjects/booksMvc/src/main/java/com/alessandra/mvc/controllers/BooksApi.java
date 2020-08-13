@@ -30,7 +30,7 @@ public class BooksApi {
 		return book;
 	}
 	
-	@RequestMapping("/api/bookss/{id}")
+	@RequestMapping("/api/books/{id}")
 	public Book show(@PathVariable("id") Long id) {
 		Book book = bookService.findBook(id);
 		return book;
